@@ -1,8 +1,11 @@
 <section class="menu sticky-top d-print-none" >
   <p-menubar [model]="items" *ngIf="items.length > 0">
-      <ng-template pTemplate="end">
+      <ng-template pTemplate="start">
         <a class="sec-ativ" style="font-size: 12px; color: #272921 !important">{{tituloPagina}} </a>
       </ng-template>
+      <ng-template pTemplate="end">
+        <input type="text" pInputText placeholder="Search">
+    </ng-template>
   </p-menubar>
 
 </section>

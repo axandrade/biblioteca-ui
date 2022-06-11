@@ -12,7 +12,7 @@ import {MenubarModule} from 'primeng/menubar';
   ],
 
 exports: [
-  //shared components
+
   MenuComponent,
 ]
 })

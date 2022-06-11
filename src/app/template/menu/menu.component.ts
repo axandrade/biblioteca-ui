@@ -22,7 +22,9 @@ export class MenuComponent implements OnInit {
 
     this.items = [
       {
-        label: 'Home'
+        label: 'Home',
+        icon: "pi pi-home",
+        routerLink: '/'
       },
       {
           label: 'Cadastros',
@@ -30,7 +32,7 @@ export class MenuComponent implements OnInit {
           items: [
             {label: 'Pessoas', icon: 'pi pi-user-plus'},
             {label: 'Livros', icon: 'pi pi-book'},
-            {label: 'Autores', icon: 'pi pi-user-edit'}
+            {label: 'Autores', icon: 'pi pi-user-edit',"routerLink": '/autores'}
           ]
       },
       {
@@ -40,6 +42,12 @@ export class MenuComponent implements OnInit {
               {label: 'Delete', icon: 'pi pi-fw pi-trash'},
               {label: 'Refresh', icon: 'pi pi-fw pi-refresh'}
           ]
+      },
+      {
+        label: 'Sair', style: {'margin-left': 'auto'},
+        icon: "pi pi-power-off",
+        routerLink: '/login',
+
       }
   ];
 

@@ -1,3 +1,5 @@
+import { Usuario } from './components/login/usuario';
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'biblioteca-ui';
+
+  mostrarMenu: boolean = false;
+
+  constructor() { }
+
 }
+
+
